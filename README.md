@@ -6,6 +6,22 @@ O sistema permite configurar um agente virtual, cadastrar uma base de conhecimen
 
 ---
 
+## Informações acadêmicas
+
+Este projeto foi desenvolvido como trabalho da disciplina de Inteligência Artificial, do curso de Bacharelado em Ciência da Computação, da Universidade Federal do Oeste do Pará — UFOPA.
+
+Semestre: 9º semestre  
+Disciplina: Inteligência Artificial  
+Curso: Ciência da Computação  
+Instituição: Universidade Federal do Oeste do Pará — UFOPA  
+
+Alunos:
+
+- Beatriz Eich Back Silva
+- Rafael Nobre de Souza
+
+---
+
 ## Sobre o projeto
 
 Pequenas empresas recebem diariamente perguntas repetidas sobre produtos, serviços, preços, formas de pagamento, horários de funcionamento, localização e agendamentos.
