@@ -1,0 +1,151 @@
+{
+  "agent": {
+    "name": "Lia",
+    "company": "Studio Clara Beleza",
+    "segment": "estetica e bem-estar",
+    "persona": "Atendente consultiva, simpática, objetiva e cuidadosa. Fala como uma pessoa no WhatsApp, sem excesso de formalidade.",
+    "instructions": "Ajude clientes a entender serviços, valores, horários e formas de agendamento. Quando houver dúvida sobre preço, política ou disponibilidade, use apenas a base de conhecimento. Se faltar informação, diga que vai verificar com a equipe. Sempre tente encaminhar para um próximo passo claro.",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "precise",
+    "temperature": 0.2,
+    "skills": [
+      "greeting",
+      "faq",
+      "escalation",
+      "lead-capture",
+      "sentiment",
+      "follow-up"
+    ],
+    "fallbackMessage": "Vou verificar com a equipe e já te retorno com a informação certinha."
+  },
+  "knowledgeSources": [
+    {
+      "id": "bae9f19a-c1b3-41d1-9f2c-2a6e3924fd99",
+      "sourceName": "interno",
+      "sourceType": "document",
+      "sourcePriority": 100,
+      "content": "# Serviços e Preços — Studio Clara Beleza\n\nO Studio Clara Beleza oferece serviços de estética facial, corporal e bem-estar, com atendimento personalizado e orientação cuidadosa antes de cada procedimento.\n\n## Horário de atendimento\n\n* Segunda a sexta: 9h às 19h\n* Sábado: 9h às 13h\n* Domingo: fechado\n\n## Serviços disponíveis\n\n| Serviço                | Duração média |     Valor |\n| ---------------------- | ------------: | --------: |\n| Limpeza de pele        |        60 min | R$ 149,00 |\n| Design de sobrancelhas |        30 min |  R$ 49,00 |\n| Design com henna       |        40 min |  R$ 69,00 |\n| Drenagem linfática     |        50 min | R$ 119,00 |\n| Pacote com 4 drenagens |     4 sessões | R$ 399,00 |\n| Massagem relaxante     |        50 min | R$ 109,00 |\n| Revitalização facial   |        45 min | R$ 129,00 |\n| Depilação buço         |        15 min |  R$ 29,00 |\n| Depilação axila        |        20 min |  R$ 39,00 |\n\n## Avaliação inicial\n\nA avaliação inicial é gratuita quando o cliente agenda qualquer procedimento no mesmo dia.\n\nCaso o cliente queira apenas a avaliação, sem agendar procedimento, o valor é R$ 40,00.\n\n## Observações importantes\n\n* Os valores podem variar apenas em casos específicos, após avaliação da equipe.\n* Pacotes devem ser pagos no início do tratamento.\n* O pacote com 4 drenagens é individual e não pode ser dividido com outra pessoa.\n* Procedimentos corporais não substituem acompanhamento médico ou nutricional.\n* Em caso de gestantes, pós-operatório, problemas circulatórios ou uso de medicamentos, a cliente deve informar antes do agendamento.",
+      "createdAt": "2026-06-30T17:48:45.710Z"
+    },
+    {
+      "id": "seed-services",
+      "sourceName": "servicos-e-precos.md",
+      "sourceType": "document",
+      "sourcePriority": 100,
+      "createdAt": "2026-06-30T00:00:00.000Z",
+      "content": "# Serviços e preços\n\n| Serviço | Duração | Valor |\n| --- | --- | --- |\n| Limpeza de pele | 60 min | R$ 149,00 |\n| Design de sobrancelhas | 30 min | R$ 49,00 |\n| Drenagem linfática | 50 min | R$ 119,00 |\n| Pacote com 4 drenagens | 4 sessões | R$ 399,00 |\n\nA avaliação inicial é gratuita quando o cliente agenda qualquer procedimento no mesmo dia. Não há cobrança de taxa de matrícula.\n\n# Horários\n\nAtendimento de segunda a sexta das 9h às 19h e sábado das 9h às 13h. Domingo fechado.\n\n# Agendamento\n\nO agendamento é feito pelo WhatsApp. Para reservar horário, pedir nome completo, serviço desejado e melhor período. O sinal de reserva é de R$ 30,00 e é abatido do valor final."
+    },
+    {
+      "id": "seed-policies",
+      "sourceName": "politicas-comerciais.txt",
+      "sourceType": "manual",
+      "sourcePriority": 90,
+      "createdAt": "2026-06-30T00:00:00.000Z",
+      "content": "Cancelamentos podem ser feitos sem custo com pelo menos 12 horas de antecedência. Remarcações no mesmo dia dependem da agenda. Pagamentos aceitos: Pix, cartão de débito e cartão de crédito em até 3 vezes para pacotes acima de R$ 300,00. O Studio Clara Beleza fica no bairro Aldeota, em Fortaleza."
+    }
+  ],
+  "knowledgeChunks": [
+    {
+      "id": "bae9f19a-c1b3-41d1-9f2c-2a6e3924fd99-chunk-0",
+      "sourceId": "bae9f19a-c1b3-41d1-9f2c-2a6e3924fd99",
+      "sourceName": "interno",
+      "sourceType": "document",
+      "sourcePriority": 100,
+      "content": "# Serviços e Preços — Studio Clara Beleza\n\nO Studio Clara Beleza oferece serviços de estética facial, corporal e bem-estar, com atendimento personalizado e orientação cuidadosa antes de cada procedimento.\n\n## Horário de atendimento\n\n* Segunda a sexta: 9h às 19h\n* Sábado: 9h às 13h\n* Domingo: fechado\n\n## Serviços disponíveis",
+      "chunkIndex": 0,
+      "createdAt": "2026-06-30T17:48:45.710Z"
+    },
+    {
+      "id": "bae9f19a-c1b3-41d1-9f2c-2a6e3924fd99-chunk-1",
+      "sourceId": "bae9f19a-c1b3-41d1-9f2c-2a6e3924fd99",
+      "sourceName": "interno",
+      "sourceType": "document",
+      "sourcePriority": 100,
+      "content": "| Serviço                | Duração média |     Valor |\n| ---------------------- | ------------: | --------: |\n| Limpeza de pele        |        60 min | R$ 149,00 |\n| Design de sobrancelhas |        30 min |  R$ 49,00 |\n| Design com henna       |        40 min |  R$ 69,00 |\n| Drenagem linfática     |        50 min | R$ 119,00 |\n| Pacote com 4 drenagens |     4 sessões | R$ 399,00 |\n| Massagem relaxante     |        50 min | R$ 109,00 |\n| Revitalização facial   |        45 min | R$ 129,00 |\n| Depilação buço         |        15 min |  R$ 29,00 |\n| Depilação axila        |        20 min |  R$ 39,00 |",
+      "chunkIndex": 1,
+      "createdAt": "2026-06-30T17:48:45.710Z"
+    },
+    {
+      "id": "bae9f19a-c1b3-41d1-9f2c-2a6e3924fd99-chunk-2",
+      "sourceId": "bae9f19a-c1b3-41d1-9f2c-2a6e3924fd99",
+      "sourceName": "interno",
+      "sourceType": "document",
+      "sourcePriority": 100,
+      "content": "## Avaliação inicial\n\nA avaliação inicial é gratuita quando o cliente agenda qualquer procedimento no mesmo dia.\n\nCaso o cliente queira apenas a avaliação, sem agendar procedimento, o valor é R$ 40,00.\n\n## Observações importantes\n\n* Os valores podem variar apenas em casos específicos, após avaliação da equipe.\n* Pacotes devem ser pagos no início do tratamento.\n* O pacote com 4 drenagens é individual e não pode ser dividido com outra pessoa.\n* Procedimentos corporais não substituem acompanhamento médico ou nutricional.\n* Em caso de gestantes, pós-operatório, problemas circulatórios ou uso de medicamentos, a cliente deve informar antes do agendamento.",
+      "chunkIndex": 2,
+      "createdAt": "2026-06-30T17:48:45.710Z"
+    },
+    {
+      "id": "seed-services-chunk-0",
+      "sourceId": "seed-services",
+      "sourceName": "servicos-e-precos.md",
+      "sourceType": "document",
+      "sourcePriority": 100,
+      "content": "# Serviços e preços",
+      "chunkIndex": 0,
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "seed-services-chunk-1",
+      "sourceId": "seed-services",
+      "sourceName": "servicos-e-precos.md",
+      "sourceType": "document",
+      "sourcePriority": 100,
+      "content": "| Serviço | Duração | Valor |\n| --- | --- | --- |\n| Limpeza de pele | 60 min | R$ 149,00 |\n| Design de sobrancelhas | 30 min | R$ 49,00 |\n| Drenagem linfática | 50 min | R$ 119,00 |\n| Pacote com 4 drenagens | 4 sessões | R$ 399,00 |",
+      "chunkIndex": 1,
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "seed-services-chunk-2",
+      "sourceId": "seed-services",
+      "sourceName": "servicos-e-precos.md",
+      "sourceType": "document",
+      "sourcePriority": 100,
+      "content": "A avaliação inicial é gratuita quando o cliente agenda qualquer procedimento no mesmo dia. Não há cobrança de taxa de matrícula.\n\n# Horários\n\nAtendimento de segunda a sexta das 9h às 19h e sábado das 9h às 13h. Domingo fechado.\n\n# Agendamento\n\nO agendamento é feito pelo WhatsApp. Para reservar horário, pedir nome completo, serviço desejado e melhor período. O sinal de reserva é de R$ 30,00 e é abatido do valor final.",
+      "chunkIndex": 2,
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "seed-policies-chunk-0",
+      "sourceId": "seed-policies",
+      "sourceName": "politicas-comerciais.txt",
+      "sourceType": "manual",
+      "sourcePriority": 90,
+      "content": "Cancelamentos podem ser feitos sem custo com pelo menos 12 horas de antecedência. Remarcações no mesmo dia dependem da agenda. Pagamentos aceitos: Pix, cartão de débito e cartão de crédito em até 3 vezes para pacotes acima de R$ 300,00. O Studio Clara Beleza fica no bairro Aldeota, em Fortaleza.",
+      "chunkIndex": 0,
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "seed-faq-1",
+      "question": "Vocês atendem sábado?",
+      "answer": "Sim, atendemos aos sábados das 9h às 13h.",
+      "isActive": true,
+      "matchCount": 9,
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "seed-faq-2",
+      "question": "Como faço para agendar?",
+      "answer": "Para agendar, me diga seu nome completo, o serviço desejado e o melhor período. O sinal de reserva é de R$ 30,00 e será abatido do valor final.",
+      "isActive": true,
+      "matchCount": 5,
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    }
+  ],
+  "messages": [],
+  "memory": {
+    "summary": "",
+    "keyFacts": {
+      "nome": "",
+      "necessidade": "",
+      "sentimento": "neutro",
+      "proximosPassos": "",
+      "painPoints": [],
+      "preferencias": []
+    },
+    "conversationsCount": 0,
+    "lastInteractionAt": ""
+  }
+}
